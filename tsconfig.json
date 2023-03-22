@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "noImplicitAny": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "noEmit": true
+  },
+  "include": ["src"]
+}
