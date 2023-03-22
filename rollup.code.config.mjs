@@ -3,7 +3,7 @@ import configTemplate from "./_rollup.mjs";
 
 export default defineConfig(() => {
   const config = configTemplate(
-    "faraday.code-viewer",
+    "faraday.code-viewer-0.0.1",
     "src/code.tsx",
     (pkg) => ({
       name: "code-viewer",
@@ -17,6 +17,7 @@ export default defineConfig(() => {
       contributes: {
         quickViews: [
           {
+            id: "code",
             extensions: [".js", ".jsx", ".ts", ".tsx", ".json", ".json5"],
             path: "./code.js",
           },

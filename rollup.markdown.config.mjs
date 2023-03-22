@@ -3,7 +3,7 @@ import configTemplate from "./_rollup.mjs";
 
 export default defineConfig(() => {
   const config = configTemplate(
-    "faraday.markdown-viewer",
+    "faraday.markdown-viewer-0.0.1",
     "src/markdown.tsx",
     (pkg) => ({
       name: "markdown-viewer",
@@ -17,6 +17,7 @@ export default defineConfig(() => {
       contributes: {
         quickViews: [
           {
+            id: "markdown",
             extensions: [".md"],
             path: "./markdown.js",
           },

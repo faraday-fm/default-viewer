@@ -3,7 +3,7 @@ import configTemplate from "./_rollup.mjs";
 
 export default defineConfig(() => {
   const config = configTemplate(
-    "faraday.image-viewer",
+    "faraday.image-viewer-0.0.1",
     "src/image.ts",
     (pkg) => ({
       name: "image-viewer",
@@ -17,6 +17,7 @@ export default defineConfig(() => {
       contributes: {
         quickViews: [
           {
+            id: "image",
             extensions: [
               ".apng",
               ".avif",
